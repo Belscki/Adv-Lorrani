@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-image: url("../imgs/background.jpg");
+    background-color: black;
+    background-size: 30vw;
+    height: 1980px;
+}
+
+h1,
+h2,
+p,
+a {
+    font-family: "Roboto Condensed", serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}

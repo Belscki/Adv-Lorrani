@@ -1,0 +1,63 @@
+#footer{
+    margin-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #314039;
+    color: #f7e2c2;
+    height: auto;
+}
+
+#footer h1{
+    margin-top: 2vh;
+}
+
+.footerContato{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.footerContato div ul li a img{
+    width: 40px;
+}
+.footerContato div ul li img{
+    width: 40px;
+}
+
+
+.footerContato div{
+    margin: 10vh 3vw;
+}
+
+.footerContato div ul li{
+    display: flex;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+form input,select{
+    font-size: 20px;
+}
+
+form #submit{
+    margin-top: 2vh;
+    background-color: #f7e2c2;
+    border: #314039;
+}
+
+@media (max-width:768px) {
+    .footerContato{
+        display: flex;
+        flex-direction: column;
+    }
+    .footerContato div{
+        margin: 10vh 4vw;
+    }
+}

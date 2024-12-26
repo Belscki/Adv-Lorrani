@@ -1,0 +1,59 @@
+#princHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 15vh;
+    background-color: #314039;
+    box-shadow: -2px 14px 29px -11px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -2px 14px 29px -11px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -2px 14px 29px -11px rgba(0, 0, 0, 0.75);
+}
+
+#princHeader div {
+    background-color: #314039;
+    border-top: 3px solid #203028;
+    border-bottom: 3px solid #203028;
+    position: relative;
+}
+
+#logonotrem {
+    position: absolute;
+    /* display: flex; */
+    top: 30%;
+    left: 36%;
+    animation: subidesce infinite 5s ease;
+}
+
+#princHeader #letras {
+    padding: 2vh 0;
+    animation: girando infinite 5s ease;
+}
+
+@keyframes girando {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes subidesce {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-1vh);
+    }
+
+    75% {
+        transform: translateY(1vh);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}

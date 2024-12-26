@@ -1,0 +1,54 @@
+.areasatu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.areasatu div {
+    margin: 4vh 3vw;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background-color: #314039;
+    text-align: center;
+    transition: all .2s ease;
+}
+
+.areasatu div h1 {
+    margin: 0;
+    color: #f7e2c2;
+    padding: 1.5vh 2vw;
+}
+
+.areasatu div p {
+    color: #fff;
+    text-align: justify;
+    margin: 2vh 2vw;
+    font-size: 1.1rem;
+}
+.areasatu .item-area {
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Transição suave */
+    opacity: 1; /* Opacidade 100% por padrão */
+}
+
+/* Quando uma div é "hovered", ela aumenta de tamanho */
+.areasatu .item-area.hovered {
+    transform: scale(1.1); /* Aumenta a div em 10% */
+    opacity: 1; /* A div em hover mantém opacidade 1 */
+}
+
+/* As divs que não estão em hover têm opacidade reduzida (mas apenas quando uma div está em hover) */
+.areasatu .item-area.not-hovered {
+    opacity: 0.7; /* Reduz a opacidade das divs não em hover */
+}
+@media (max-width:768px) {
+    .areasatu {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .areasatu div p {
+        color: #fff;
+        text-align: justify;
+        margin: 2vh 2vw;
+        font-size: 1rem;
+    }
+}

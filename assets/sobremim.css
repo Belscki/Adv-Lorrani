@@ -1,0 +1,50 @@
+.sobreMim{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20vh 0;
+    background-color: #314039;
+    padding: 5vh 0;
+}
+
+.sobreMim div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: #fff;
+    text-align: justify;
+}
+
+.sobreMim div p{
+    font-size: 1.5rem;
+    margin: 3vh 3vw;
+}
+
+.sobreMim h1{
+    color: #f7e2c2;
+}
+
+.affix2{
+    animation: aparecer 2s ease;
+}
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100;
+    }
+}
+
+@media (max-width:768px) {
+    .sobreMim div{
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        text-align: justify;
+    }
+}
+
+.invisivel{
+    opacity: 0;
+}
